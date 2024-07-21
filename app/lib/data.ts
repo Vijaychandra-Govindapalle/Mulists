@@ -1,3 +1,5 @@
+
+
 export async function getSongs() {
   try {
     const res = await fetch('https://669670530312447373c289a8.mockapi.io/api/v1/songs/Music', {
@@ -15,8 +17,8 @@ export async function getSongs() {
   }
 }
 
-const client_id = '0ee6b9f778954f98a73fc6aa0fa61655'; 
-const client_secret = 'e76d4fae3c74462fa0ea0f7f4bb2dcb4';
+const client_id = process.env.SPOTIFY_CLIENTID; 
+const client_secret = process.env.SPOTIFY_CLIENTSECRET;
 
 
 async function getToken() {

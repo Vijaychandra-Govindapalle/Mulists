@@ -2,7 +2,7 @@
 import { useState, useEffect, ChangeEvent } from 'react';
 import Image from "next/image";
 import { useSearchParams, usePathname, useRouter } from 'next/navigation';
-import { getSong } from '../../lib/data';
+import { getSong } from '../lib/data';
 
 
 
