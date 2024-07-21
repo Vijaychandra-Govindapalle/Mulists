@@ -1,7 +1,7 @@
 import { getSongs } from "./lib/data";
 import ScrollScreen from "./ui/scrollScreen";
-import GetSongs from "./ui/searchSongs/page";
 import { getSong } from './lib/data';
+import Login from './Login/page';
 
 export default async function Home() {
   const songs = await getSong('Faded');
@@ -9,11 +9,10 @@ export default async function Home() {
   console.log(songs)
   return (
     <>
-    <ScrollScreen songs={dummySongs} /> </>
-   
-  
+    <Login />
+    </>
+    //<ScrollScreen songs={dummySongs} /> 
    // 
-   
   );
 }
  

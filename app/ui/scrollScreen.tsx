@@ -3,7 +3,6 @@ import Post from "./post";
 import Image from "next/image";
 import music_bg from "../../public/music_bg.jpg";
 import Link from "next/link";
-import GetSongs from "./searchSongs/page";
 
 interface Song {
   id: string;
