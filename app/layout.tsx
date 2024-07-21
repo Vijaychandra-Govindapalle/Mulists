@@ -7,6 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Mulists",
   description: "A collaborative music",
+  
 };
 
 export default function RootLayout({
@@ -16,6 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      
       <body className={inter.className}>{children}</body>
     </html>
   );
